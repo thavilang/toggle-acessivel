@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Toggle</title>
+    <style>
+        [js-toggle] {
+            max-width: 500px;
+            margin: 0 auto 50px;
+        }
+
+        [js-toggle]>button {
+            width: 100%;
+            text-align: left;
+            line-height: 40px;
+        }
+
+        [js-toggle]>button::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        [js-toggle]>button.ativo::after {
+            content: "-";
+        }
+    </style>
+</head>
+
+<body>
+    <!--Não utilize id's nas perguntas e respostas, o script irá seta-los randomicamente-->
+    <div js-toggle>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+    </div>
+    <div js-toggle>
+        <button class="ativo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+    </div>
+    <div js-toggle>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+        <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet. Nunc
+                rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum velit.
+                Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet nulla.
+                Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                lectus vel, aliquet elit.</p>
+            <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
+                Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum viverra
+                fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
+            <ul>
+                <li>Proin vestibulum lacinia sem at laoreet. </li>
+                <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
+                <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
+                <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
+                <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
