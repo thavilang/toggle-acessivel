@@ -13,10 +13,7 @@ gruposToggle.forEach(grupoToggle => {
         botaoToggle.nextElementSibling.setAttribute('aria-labelledby', idBotao);
 
         if(botaoToggle.classList.contains('ativo')){
-            botaoToggle.setAttribute('aria-expanded', 'true');
-            botaoToggle.setAttribute('tabindex', '-1');
-            botaoToggle.nextElementSibling.setAttribute('tabindex', '0');
-            botaoToggle.nextElementSibling.classList.add('ativo');
+            abrirToggle(botaoToggle);
         }
 
         botaoToggle.addEventListener('click', function () {
