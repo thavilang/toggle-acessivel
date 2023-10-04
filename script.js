@@ -1,6 +1,5 @@
 let gruposToggle = document.querySelectorAll('[js-toggle]');
 gruposToggle.forEach(grupoToggle => {
-    grupoToggle.setAttribute('role', 'tablist');
 
     let botoesToggle = grupoToggle.querySelectorAll('button');
     botoesToggle.forEach(botaoToggle => {
@@ -8,14 +7,13 @@ gruposToggle.forEach(grupoToggle => {
         botaoToggle.setAttribute('id', idBotao);
         const idResposta = ToggleRandomId();
         botaoToggle.nextElementSibling.setAttribute('id', idResposta);
-        botaoToggle.setAttribute('role', 'tab');
-        botaoToggle.setAttribute('aria-selected', 'false');
+        botaoToggle.nextElementSibling.setAttribute('role', 'region');
+        botaoToggle.setAttribute('aria-expanded', 'false');
         botaoToggle.setAttribute('aria-controls', idResposta);
-        botaoToggle.nextElementSibling.setAttribute('role', 'tabpanel');
         botaoToggle.nextElementSibling.setAttribute('aria-labelledby', idBotao);
 
         if(botaoToggle.classList.contains('ativo')){
-            botaoToggle.setAttribute('aria-selected', 'true');
+            botaoToggle.setAttribute('aria-expanded', 'true');
             botaoToggle.setAttribute('tabindex', '-1');
             botaoToggle.nextElementSibling.setAttribute('tabindex', '0');
             botaoToggle.nextElementSibling.classList.add('ativo');
@@ -52,7 +50,7 @@ function efeitoToggle(botao, listaBotoes) {
 
 function abrirToggle(elemento) {
     elemento.classList.add('ativo');
-    elemento.setAttribute('aria-selected', 'true');
+    elemento.setAttribute('aria-expanded', 'true');
     elemento.setAttribute('tabindex', '-1');
     elemento.nextElementSibling.setAttribute('tabindex', '0');
     elemento.nextElementSibling.classList.add('ativo');
@@ -60,7 +58,7 @@ function abrirToggle(elemento) {
 
 function fecharToggle(elemento) {
     elemento.classList.remove('ativo');
-    elemento.setAttribute('aria-selected', 'false');
+    elemento.setAttribute('aria-expanded', 'false');
     elemento.nextElementSibling.classList.remove('ativo');
     elemento.removeAttribute('tabindex');
     elemento.nextElementSibling.removeAttribute('tabindex');
