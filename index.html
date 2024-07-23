@@ -10,6 +10,7 @@
     <style>
         body {
             font-family: sans-serif;
+            padding: 50px 0 100px;
         }
 
         main {
@@ -76,6 +77,7 @@
             display: flex;
             justify-content: center;
             list-style: none;
+            padding: 0;
         }
         nav ul li + li{
             margin-left: 1ch;
@@ -98,29 +100,8 @@
                 <li><a href="https://github.com/thavilang/toggle-acessivel" target="_blank">GitHub</a></li>
             </ul>
         </nav>
-
-        <h2>Estrutura HTML</h2>
-        <p>Adicione o atributo <code>js-toggle</code> ao container que agrupa os botões e os conteúdos que serão controlados:</p>
-        <p><strong>Não utilize id's nos itens dentro do container, o script irá seta-los randomicamente</strong></p>
-<code>
-<pre>
-&lt;div js-toggle&gt;
-    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
-    &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
-    &lt;/div&gt;
-    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
-    &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
-    &lt;/div&gt;
-    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
-    &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-</code>
-        <h3>Demo:</h3>
+        <hr>
+        <h2>Demo</h2>
         <div js-toggle>
             <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
             <div>
@@ -188,12 +169,35 @@
                 </ul>
             </div>
         </div>
+        <hr>
+
+        <h2>Estrutura HTML</h2>
+        <p>Adicione o atributo <code>js-toggle</code> ao container que agrupa os botões e os conteúdos que serão controlados:</p>
+        <p><strong>Não utilize id's nos itens dentro do container, o script irá seta-los randomicamente</strong></p>
+<code>
+<pre>
+&lt;div js-toggle&gt;
+    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
+    &lt;div&gt;
+        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+    &lt;/div&gt;
+    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
+    &lt;div&gt;
+        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+    &lt;/div&gt;
+    &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
+    &lt;div&gt;
+        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</code>
         <h2>CSS</h2>
         <p>Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height setado por padrão (linha 7 do scss) caso o conteúdo do seu toggle seja muito extenso. É um código css simples e facilmente customizável, sinta-se livre com ele :)</p>
         <h2>JavaScript</h2>
         <p>Adicione o código JS no seu projeto</p>
         <h2>Opcionais</h2>
-        <p>Você pode adicionar a classe <code>ativo</code> em um dos seus botões para que o toggle tenha um item aberto por padrão. Ex:</p>
+        <p>Você pode adicionar a classe <code>ativo</code> em um dos seus botões para que o toggle comece com um item já visível. Ex:</p>
 <code>
 <pre>
 &lt;div js-toggle&gt;
@@ -212,78 +216,6 @@
 &lt;/div&gt;
 </pre>
 </code>
-        <h3>Demo:</h3>
-        <div js-toggle>
-            <button class="ativo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet.
-                    Nunc
-                    rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum
-                    velit.
-                    Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet
-                    nulla.
-                    Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
-                    lectus vel, aliquet elit.</p>
-                <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
-                    Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum
-                    viverra
-                    fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
-                    vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
-                <ul>
-                    <li>Proin vestibulum lacinia sem at laoreet. </li>
-                    <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
-                    <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
-                    <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
-                    <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
-                </ul>
-            </div>
-            <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet.
-                    Nunc
-                    rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum
-                    velit.
-                    Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet
-                    nulla.
-                    Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
-                    lectus vel, aliquet elit.</p>
-                <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
-                    Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum
-                    viverra
-                    fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
-                    vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
-                <ul>
-                    <li>Proin vestibulum lacinia sem at laoreet. </li>
-                    <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
-                    <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
-                    <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
-                    <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
-                </ul>
-            </div>
-            <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet.
-                    Nunc
-                    rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum
-                    velit.
-                    Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet
-                    nulla.
-                    Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
-                    lectus vel, aliquet elit.</p>
-                <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
-                    Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum
-                    viverra
-                    fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
-                    vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
-                <ul>
-                    <li>Proin vestibulum lacinia sem at laoreet. </li>
-                    <li>Quisque tristique libero metus, in pellentesque ex molestie at. </li>
-                    <li>Maecenas laoreet congue lorem nec varius. Integer aliquam luctus lobortis. </li>
-                    <li>Aliquam ullamcorper neque lacus, ac rhoncus tellus placerat sed. </li>
-                    <li>Mauris in nibh ex. Mauris bibendum varius urna vitae sodales.</li>
-                </ul>
-            </div>
-        </div>
     </main>
     <script src="script.js"></script>
 </body>
