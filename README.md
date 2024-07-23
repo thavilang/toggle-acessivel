@@ -11,6 +11,8 @@ Demo: https://thavilang.github.io/toggle-acessivel/
 ## Estrutura HTML
 Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os conteúdos que serão controlados:
 
+**Não utilize id's nas perguntas e respostas, o script irá seta-los randomicamente**
+
 ```HTML
 <div js-toggle>
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
