@@ -4,7 +4,7 @@ Esse é um código para fazer elementos toggle serem acessíveis a leitores de t
 
 ----------------------------------------------------
 
-Demo: https://thavilang.github.io/toggle-acessivel/
+https://thavilang.github.io/toggle-acessivel/
 
 ----------------------------------------------------
 
