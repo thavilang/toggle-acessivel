@@ -31,7 +31,7 @@ Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os cont
 ```
 
 ## CSS
-Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height setado por padrão caso o conteúdo do seu toggle seja muito extenso. É um código css simples e facilmente customizável, sinta-se livre com ele :)
+Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height setado por padrão (linha 7 do scss) caso o conteúdo do seu toggle seja muito extenso. É um código css simples e facilmente customizável, sinta-se livre com ele :)
 
 ## JavaScript
 Adicione o código JS no seu projeto
