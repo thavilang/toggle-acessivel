@@ -9,7 +9,7 @@ Demo: https://thavilang.github.io/toggle-acessivel/
 ----------------------------------------------------
 
 ## Estrutura HTML
-Adicione o atributo js-toggle ao contêiner que agrupa os botões e os conteúdos que serão controlados:
+Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os conteúdos que serão controlados:
 
 ```HTML
 <div js-toggle>
