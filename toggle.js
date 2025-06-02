@@ -88,11 +88,16 @@ function fecharToggle(elemento) {
     });
 }
 
+const idsGerados = new Set();
 function ToggleRandomId() {
-    let s4 = () => {
-        return Math.floor((1 + Math.random()) * 0x10000)
-            .toString(16)
-            .substring(1);
+    let id;
+    do {
+        id = 'toggle-' + s4() + s4();
+    } while (idsGerados.has(id));
+    idsGerados.add(id);
+    return id;
+
+    function s4() {
+        return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1, 4);
     }
-    return 'toggle-' + s4() + s4() + '-' + s4() + '-' + s4();
 }

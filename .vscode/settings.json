@@ -15,7 +15,7 @@
         "defaults"
     ],
 
-    "editor.formatOnSave": true,    "[css]": {
+    "editor.formatOnSave": false,    "[css]": {
         "editor.formatOnSave": false    },
         "[scss]": {        "editor.formatOnSave": false    }
 }

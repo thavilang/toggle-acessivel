@@ -1,12 +1,26 @@
 # Componente Toggle Acessível a Leitores de Tela (v2.0)
 
-Esse é um código para fazer elementos toggle serem acessíveis a leitores de tela. Todos os arias são colocados via JavaScript. Aceito contribuições :)
+Implementar um toggle básico em JavaScript é simples, mas garantir acessibilidade — com atributos ARIA corretos, controle de foco e navegação por teclado — geralmente exige mais código e atenção.
+
+Este componente simplifica isso fornecendo uma estrutura HTML enxuta e a lógica necessária para toggles acessíveis com efeito sanfona.
 
 ----------------------------------------------------
 
 https://thavilang.github.io/toggle-acessivel/
 
 ----------------------------------------------------
+
+## CSS
+Adicione o arquivo css ou scss base no seu projeto.
+```HTML
+<link rel="stylesheet" href="https://thavilang.github.io/toggle-acessivel/toggle.min.css">
+```
+
+## JavaScript
+Adicione o código JS no seu projeto
+```HTML
+<script src="https://thavilang.github.io/toggle-acessivel/toggle.min.js"></script>
+```
 
 ## Estrutura HTML
 Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os conteúdos que serão controlados:
@@ -30,12 +44,6 @@ Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os cont
 </div>
 ```
 
-## CSS
-Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height setado por padrão (linha 7 do scss) caso o conteúdo do seu toggle seja muito extenso. É um código css simples e facilmente customizável, sinta-se livre com ele :)
-
-## JavaScript
-Adicione o código JS no seu projeto
-
 ## Opcionais
 Você pode adicionar a classe "```ativo```" em um dos seus botões para que o toggle tenha um item aberto por padrão. Ex:
 
@@ -55,3 +63,8 @@ Você pode adicionar a classe "```ativo```" em um dos seus botões para que o to
     </div>
 </div>
 ```
+
+## Observações
+As versões minificadas facilitam a implementação rápida, mas os arquivos não minificados são pequenos e podem ser facilmente personalizados.
+
+Se desejar contribuir com o projeto, fique à vontade para enviar um pull request. Este código é de uso livre e tem como objetivo simplificar a implementação de recursos de acessibilidade. Ao contribuir, você ajuda a tornar a web mais acessível para todos. :)
