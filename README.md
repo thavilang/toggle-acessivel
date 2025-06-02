@@ -1,4 +1,4 @@
-# Componente Toggle Acessível a Leitores de Tela
+# Componente Toggle Acessível a Leitores de Tela (v2.0)
 
 Esse é um código para fazer elementos toggle serem acessíveis a leitores de tela. Todos os arias são colocados via JavaScript. Aceito contribuições :)
 

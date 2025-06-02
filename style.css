@@ -1,1 +1,0 @@
-[js-toggle]>button{position:relative;cursor:pointer}[js-toggle]>div{max-height:150vh;overflow:hidden;transition:max-height .5s,padding-top .5s,padding-bottom .5s}[js-toggle]>div:not(.ativo){visibility:hidden}[js-toggle]>div.efeito-toggle,[js-toggle]>div:not(.ativo){max-height:0px !important;padding-top:0 !important;padding-bottom:0 !important}

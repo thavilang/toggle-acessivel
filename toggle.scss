@@ -1,21 +1,20 @@
+/*!Toggle Acessível V 2.0
+*/
 [js-toggle] {
-    > button{
+    >button {
         position: relative;
         cursor: pointer;
     }
-    > div {
-        max-height: 150vh;
+
+    >div {
         overflow: hidden;
-        transition: max-height 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+        transition: height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
 
         &:not(.ativo) {
             visibility: hidden;
-        }
-
-        &.efeito-toggle, &:not(.ativo) {
-            max-height: 0px !important;
             padding-top: 0 !important;
             padding-bottom: 0 !important;
+            height: 0 !important;
         }
     }
 }

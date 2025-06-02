@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.min.css">
     <title>Toggle</title>
     <style>
         body {
@@ -19,16 +19,17 @@
             margin: 0 auto;
         }
 
-        h1{
+        h1 {
             font-size: 1.8rem;
             text-align: center;
         }
 
-        h2{
+        h2 {
             margin-top: 1.5em;
         }
 
-        p, ul{
+        p,
+        ul {
             line-height: 1.5em;
         }
 
@@ -58,32 +59,33 @@
             content: "-";
         }
 
-        code{
+        code {
             display: block;
             background-color: #f1f1f1;
             padding: 15px;
         }
 
-        code span{
+        code span {
             opacity: 0.5;
         }
 
-        p > code{
+        p>code {
             display: inline-block;
             padding: 0 0.2em;
         }
 
-        nav ul{
+        nav ul {
             display: flex;
             justify-content: center;
             list-style: none;
             padding: 0;
         }
-        nav ul li + li{
+
+        nav ul li+li {
             margin-left: 1ch;
         }
 
-        nav ul li + li::before{
+        nav ul li+li::before {
             content: "•";
             margin-right: 1ch;
         }
@@ -96,7 +98,7 @@
         <hr>
         <nav>
             <ul>
-                <li><a href="toggle-acessivel.zip" download>Download</a></li>
+                <li><a href="toggle.zip" download>Download</a></li>
                 <li><a href="https://github.com/thavilang/toggle-acessivel" target="_blank">GitHub</a></li>
             </ul>
         </nav>
@@ -106,13 +108,17 @@
             <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
             <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel aliquet.
-                    Nunc rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur, fermentum
-                    velit. Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non aliquet
-                    nulla. Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit, pretium
+                    Nunc rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur,
+                    fermentum
+                    velit. Praesent ullamcorper neque sit amet tortor dictum pretium. Etiam eget feugiat nunc, non
+                    aliquet
+                    nulla. Suspendisse in eros eget neque consectetur vulputate a a est. Vestibulum in mauris suscipit,
+                    pretium
                     lectus vel, aliquet elit.</p>
                 <p>Proin auctor pretium felis id lacinia. Curabitur facilisis in est quis commodo. Fusce ac dictum ante.
                     Donec sagittis nulla at tortor dapibus, quis eleifend velit hendrerit. Nam vitae leo et ipsum
-                    viverra fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet arcu sed
+                    viverra fermentum. Donec consequat arcu eu vulputate venenatis. Morbi eu turpis nunc. Fusce aliquet
+                    arcu sed
                     vulputate tempor. Sed venenatis odio eget leo euismod, a pharetra tortor sodales.</p>
                 <ul>
                     <li>Proin vestibulum lacinia sem at laoreet. </li>
@@ -172,9 +178,10 @@
         <hr>
 
         <h2>Estrutura HTML</h2>
-        <p>Adicione o atributo <code>js-toggle</code> ao container que agrupa os botões e os conteúdos que serão controlados:</p>
+        <p>Adicione o atributo <code>js-toggle</code> ao container que agrupa os botões e os conteúdos que serão
+            controlados:</p>
         <p><strong>Não utilize id's nos itens dentro do container, o script irá seta-los randomicamente</strong></p>
-<code>
+        <code>
 <pre>
 &lt;div js-toggle&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
@@ -193,12 +200,15 @@
 </pre>
 </code>
         <h2>CSS</h2>
-        <p>Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height setado por padrão (linha 7 do scss) caso o conteúdo do seu toggle seja muito extenso. É um código css simples e facilmente customizável, sinta-se livre com ele :)</p>
+        <p>Adicione o arquivo css ou scss base no seu projeto. Pode acontecer de você precisar aumentar o max-height
+            setado por padrão (linha 7 do scss) caso o conteúdo do seu toggle seja muito extenso. É um código css
+            simples e facilmente customizável, sinta-se livre com ele :)</p>
         <h2>JavaScript</h2>
         <p>Adicione o código JS no seu projeto</p>
         <h2>Opcional</h2>
-        <p>Você pode adicionar a classe <code>ativo</code> em um dos seus botões para que o toggle comece com um item já visível. Ex:</p>
-<code>
+        <p>Você pode adicionar a classe <code>ativo</code> em um dos seus botões para que o toggle comece com um item já
+            visível. Ex:</p>
+        <code>
 <pre>
 &lt;div js-toggle&gt;
     &lt;button class="ativo"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
@@ -217,7 +227,7 @@
 </pre>
 </code>
     </main>
-    <script src="script.js"></script>
+    <script src="toggle.min.js"></script>
 </body>
 
 </html>
