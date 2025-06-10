@@ -64,6 +64,25 @@ Você pode adicionar a classe "```ativo```" em um dos seus botões para que o to
 </div>
 ```
 
+Você pode adicionar o valor "```no-auto-close```" no js-toggle para que um item não feche automaticamente quando outro é aberto. Ex:
+
+```HTML
+<div js-toggle="no-auto-close">
+    <button class="ativo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+    <div>
+        <!-- Conteúdo que será expandido/recolhido -->
+    </div>
+    <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+    <div>
+        <!-- Conteúdo que será expandido/recolhido -->
+    </div>
+    <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+    <div>
+        <!-- Conteúdo que será expandido/recolhido -->
+    </div>
+</div>
+```
+
 ## Observações
 As versões minificadas facilitam a implementação rápida, mas os arquivos não minificados são pequenos e podem ser facilmente personalizados.
 

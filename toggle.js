@@ -2,8 +2,12 @@
 window.addEventListener('DOMContentLoaded', function () {
     let gruposToggle = document.querySelectorAll('[js-toggle]');
     gruposToggle.forEach(grupoToggle => {
+        
+        // Verifica se o atributo js-toggle contém 'no-auto-close'
+        const noClose = grupoToggle.getAttribute('js-toggle') === 'no-auto-close';
 
         let botoesToggle = grupoToggle.querySelectorAll('button');
+
         botoesToggle.forEach(botaoToggle => {
             const idBotao = ToggleRandomId();
             botaoToggle.setAttribute('id', idBotao);
@@ -20,15 +24,15 @@ window.addEventListener('DOMContentLoaded', function () {
             }
 
             botaoToggle.addEventListener('click', function () {
-                efeitoToggle(botaoToggle, botoesToggle);
+                efeitoToggle(botaoToggle, botoesToggle, noClose); // Passa 'noClose' como parâmetro
             });
         });
     });
 });
 
-function efeitoToggle(botao, listaBotoes) {
+function efeitoToggle(botao, listaBotoes, noClose) {
     if (!botao.classList.contains('ativo')) {
-        if (listaBotoes) {
+        if (listaBotoes && !noClose) { // Só fecha os outros se 'noClose' não estiver presente
             listaBotoes.forEach(cadaBotao => {
                 if (cadaBotao.classList.contains('ativo')) {
                     fecharToggle(cadaBotao);
