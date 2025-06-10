@@ -68,7 +68,7 @@ Você pode adicionar o valor "```no-auto-close```" no js-toggle para que um item
 
 ```HTML
 <div js-toggle="no-auto-close">
-    <button class="ativo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
+    <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
         <!-- Conteúdo que será expandido/recolhido -->
     </div>
