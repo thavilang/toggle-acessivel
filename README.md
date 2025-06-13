@@ -26,7 +26,8 @@ Adicione o código JS no seu projeto
 Adicione o atributo ```js-toggle``` ao container que agrupa os botões e os conteúdos que serão controlados:
 
 **Não utilize id's nas perguntas e respostas, o script irá seta-los randomicamente**
-**Não coloque margins ou paddings na div toggle**, isso pode afetar o cálculo de altura do elemento.
+
+**Não coloque margins ou paddings na div toggle**, isso pode afetar o cálculo de altura do elemento. Utilize um container interno como no exemplo (.sua-classe-custom).
 
 ```HTML
 <div js-toggle>
@@ -58,21 +59,15 @@ Você pode adicionar a classe "```ativo```" em um dos seus botões para que o to
 <div js-toggle>
     <button class="ativo">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
 </div>
 ```
@@ -83,21 +78,15 @@ Você pode adicionar o valor "```no-auto-close```" no js-toggle para que um item
 <div js-toggle="no-auto-close">
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
     <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
     <div>
-        <div class="sua-classe-custom">
-            <!-- Conteúdo que será expandido/recolhido -->
-        </div>
+        <!-- Conteúdo que será expandido/recolhido -->
     </div>
 </div>
 ```
