@@ -113,7 +113,7 @@
         <div js-toggle>
             <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
             <div>
-                <div class="sua-classe-de-conteudo">
+                <div class="sua-classe-custom-de-conteudo">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel
                         aliquet.
                         Nunc rhoncus tellus vel porta volutpat. Maecenas vitae dui lacinia, porttitor mi efficitur,
@@ -142,7 +142,7 @@
             </div>
             <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
             <div>
-                <div class="sua-classe-de-conteudo">
+                <div class="sua-classe-custom-de-conteudo">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel
                         aliquet.
                         Nunc
@@ -171,7 +171,7 @@
             </div>
             <button>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</button>
             <div>
-                <div class="sua-classe-de-conteudo">
+                <div class="sua-classe-custom-de-conteudo">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan pretium turpis vel
                         aliquet.
                         Nunc
@@ -219,20 +219,27 @@
         <p>Adicione o atributo <code>js-toggle</code> ao container que agrupa os botões e os conteúdos que serão
             controlados:</p>
         <p><strong>Não utilize id's nos itens dentro do container, o script irá seta-los randomicamente</strong></p>
+        <p><strong>Não coloque margins ou paddings na div toggle</strong>, isso pode afetar o cálculo de altura do elemento.</p>
         <code>
 <pre>
 &lt;div js-toggle&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -245,15 +252,21 @@
 &lt;div js-toggle&gt;
     &lt;button class="ativo"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div>
 &lt;/div&gt;
 </pre>
@@ -266,15 +279,21 @@
 &lt;div js-toggle="no-auto-close"&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;button&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/button&gt;
     &lt;div&gt;
-        <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;div class="sua-classe-custom"&gt;
+            <span>&lt;!-- Conteúdo que será expandido/recolhido --&gt;</span>
+        &lt;/div&gt;
     &lt;/div>
 &lt;/div&gt;
 </pre>
